@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Colors */
+:root {
+    --White: #FFFFFF;
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    
+  }
+/* Spacing */
+:root {
+    --spacer-0: auto;
+    --spacer-1: .25rem;
+    --spacer-2: .5rem;
+    --spacer-3: 1rem;
+    --spacer-4: 1.5rem;
+    --spacer-5: 3rem;
+}
+body {
+    background-color: var(--light-blue-100);
+    font-family: Inter;
+    color: var(--dark-blue-300);
+}
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+/* Scroll personalizado para TEXTAREA */
+textarea::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    /* display: none;  Ocultar scroll */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+textarea::-webkit-scrollbar-thumb {
+    background: var(--light-blue-400);
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+textarea::-webkit-scrollbar-thumb:hover {
+    background: var(--light-blue-400);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+textarea::-webkit-scrollbar-thumb:active {
+    background-color: var(--light-blue-500);
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+textarea::-webkit-scrollbar-track {
+    background: var(--light-blue-200);
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+textarea::-webkit-scrollbar-track:hover,
+textarea::-webkit-scrollbar-track:active {
+    background: var(--light-blue-200);
+}
